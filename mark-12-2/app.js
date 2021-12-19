@@ -9,9 +9,9 @@ function calculatescore(){
     const formResults = new FormData(quizForm);
     for(let value of formResults.values()){
         if(value === correctAnswers[index]){
-        score=score+1;
+        score = score + 1;
     }
-    index=index+1
+    index = index + 1;
 }
 //console.log(score);
 outputE1.innerText="Your score is" + score;
